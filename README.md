@@ -3,28 +3,28 @@ We love all our co-workers here at MarketDial and want to create an address book
 
 ## // TODOs
 1. Make a form that will create a new contact. Make sure it includes the following fields:
-	[x] Name (required)
-	[x] Email
-	[x] Phone Number
-	[x] Is Favorite
+	[x] Name (required)  
+	[x] Email   
+	[x] Phone Number   
+	[x] Is Favorite    
 1. Format the list of contacts using Sass.
 
 	<img src="./contact-list-style-example.png" width="500">
 	
-	* List Styling
-		[x] List positioning to be in the middle of the page.
-		[x] Border around the list.
-	* Item Styling
-		[x] Every other contact should have a background color of `#eaf1f8`.
-		[x] Remove default list styles and add padding.
+	* List Styling  
+		[x] List positioning to be in the middle of the page.  
+		[x] Border around the list.    
+	* Item Styling  
+		[x] Every other contact should have a background color of `#eaf1f8`.  
+		[x] Remove default list styles and add padding.    
 		* Text underline on hover.
 		* Bold favorited contacts.
 1. Make a contact details component that will show the contact's email and phone number when clicking on a contact's name.
 1. Verify your app runs without any linting errors.
 
-## Extras
-[x] Add input validation.
-[x] Style the form and contact details using Sass.
+## Extras  
+[x] Add input validation.  
+[x] Style the form and contact details using Sass.  
 * Paginate the contact list.
 * Add the ability to sort contacts.
 * Add the ability to search contacts.
