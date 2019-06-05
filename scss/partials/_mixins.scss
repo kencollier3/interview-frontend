@@ -1,0 +1,10 @@
+@mixin input-field {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 8px;
+}
+
+@mixin container-dimensions {
+    width: 50%;
+    margin: auto;
+}

@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>vue-contacts-app</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but vue-contacts-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link href="/scss/style.css" rel="stylesheet" />
+  <title>vue-contacts-app</title>
+</head>
+
+<body>
+  <div id="form-and-contacts-wrapper">
+    <div id="form-container">
+      <h2 id="contact-list-title">Contact List</h2>
+      <form>
+        <ul>
+          <li class="form-item">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </li>
+          <li class="form-item">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" required>
+          </li>
+          <li class="form-item">
+            <label for="email">Email</label>
+            <input type="email" name="email" pattern="[^@]+@[^\.]+\..+" id="email" >
+          </li>
+          <li class="form-item">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          </li class="form-item">
+          <li id="favorite-li">
+            <Label for="is-favorite">Is Favorite</Label>
+            <input type="checkbox" name="is-favorite" id="is-favorite">
+          </li>
+        </ul>
+        <input type="submit" name="contact-submit-button" id="contact-submit-button">
+      </form>
+    </div> <!-- #contact-form-wrapper -->
+    <div id="list-container">
+      <ul id="contacts-list">
+        <li>
+          <a href="">Joe</a>
+        </li>
+        <li>
+          <a href="">Nancy</a>
+        </li>
+        <li>
+          <a href="">Hanzel</a>
+        </li>
+      </ul>
+    </div>
+    <!--list-container-->
+  </div>
+  <!--form-and-contacts-wrapper -->
+  <noscript>
+    <strong>We're sorry but vue-contacts-app doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+
+  <!-- I understand that this specific div points to the App.vue file, and that is where a majority of the code should go. I just don't know how to how to implement that (yet). -->
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
